@@ -2,29 +2,44 @@
 
 ## Overview
 
-This is a Dash application built with Python.
+Knowledge management and security analysis dashboard for information protection
 
-A web application originally hosted on Heroku.
+This application provides comprehensive tools for data analysis, visualization, and insights generation in its specific domain.
+
+## Key Features
+
+- **Database operations**
+- **Data analysis (Pandas)**
+
+## What Users Can Do
+
+1. **Browse and Search**: Navigate through available data using intuitive search functionality
+2. **Filter and Sort**: Apply multiple filters to find specific information
+3. **Visualize Data**: View data through interactive charts and graphs
+4. **Export Results**: Download filtered data for further analysis
+5. **Real-time Updates**: Access the latest information as it becomes available
+
+## Data Sources
+
+- Security incidents
+- Knowledge bases
+- Threat intelligence
 
 ## Technology Stack
 
-- **Language**: Python
-- **Framework**: Dash
-- **Platform**: Originally deployed on Heroku
+- **Backend**: Dash (Python analytics framework) with Pandas for data analysis
+- **Frontend**: Dash/React components
+- **Database**: SQL database via SQLAlchemy
+- **Deployment**: Originally on Heroku, now available for various platforms
 
-## Project Structure
-
-- `requirements.txt` - Python dependencies
-- `Procfile` - Heroku process configuration
-
-## Setup Instructions
+## Installation
 
 ### Prerequisites
 
 - Python 3.8 or higher
-- pip
+- pip package manager
 
-### Installation
+### Quick Start
 
 1. Clone the repository:
    ```bash
@@ -32,60 +47,59 @@ A web application originally hosted on Heroku.
    cd knowledge-security-dashboard
    ```
 
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Set up environment variables:
+3. Configure environment:
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
    ```
 
-5. Run the application:
+4. Run the application:
    ```bash
-   python app.py  # or as specified in Procfile
+   python app.py
    ```
 
-## Deployment
+5. Access the dashboard:
+   Open http://localhost:5000 in your browser
 
-### Deploying to Heroku
+## Usage Guide
 
-1. Create a new Heroku app:
-   ```bash
-   heroku create your-app-name
-   ```
+### Getting Started
 
-2. Set environment variables:
-   ```bash
-   heroku config:set KEY=value
-   ```
+1. **Login/Access**: Navigate to the main page to access the dashboard
+2. **Select Data View**: Choose from available tabs or sections
+3. **Apply Filters**: Use the filter panel to narrow down your analysis
+4. **Interact with Visualizations**: Click, hover, and zoom on charts for detailed information
+5. **Export Data**: Use the export button to download your filtered results
 
-3. Deploy:
-   ```bash
-   git push heroku main
-   ```
+### Advanced Features
 
-### Alternative Deployment Options
+- **Custom Date Ranges**: Select specific time periods for analysis
+- **Multi-criteria Search**: Combine multiple search parameters
+- **Saved Queries**: Save frequently used filter combinations
+- **Responsive Design**: Access on desktop, tablet, or mobile devices
 
-- **Vercel**: For static sites and Next.js apps
-- **Netlify**: For static sites
-- **Railway**: Similar to Heroku, good for full-stack apps
-- **Render**: Another Heroku alternative
+## API Documentation
+
+If this application includes an API, common endpoints include:
+
+- `GET /api/data` - Retrieve filtered data
+- `GET /api/stats` - Get statistical summaries
+- `POST /api/search` - Advanced search functionality
+- `GET /api/export` - Export data in various formats
 
 ## Contributing
 
+We welcome contributions! Please see our contributing guidelines:
+
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## License
@@ -94,8 +108,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For support, please open an issue in the GitHub repository.
+For questions or issues:
+- Open an issue on GitHub
+- Contact the HCSS team
+
+## Acknowledgments
+
+Originally developed for the Hague Centre for Strategic Studies (HCSS) to support strategic analysis and decision-making.
 
 ---
 
-*This application was originally hosted on Heroku and has been archived here for preservation and future use.*
+*Last updated: hcss-utils</format>*
