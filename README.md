@@ -114,8 +114,9 @@ For questions or issues:
 
 ## Acknowledgments
 
-Originally developed for the Hague Centre for Strategic Studies (HCSS) to support strategic analysis and decision-making.
+This application is part of [HCSS](https://hcss.nl)'s [StratBase research protocol](https://docs.google.com/document/d/1GsMZudXYCwFsbsphggaGyARfhqxO67hsg8UaX90sEUE), a comprehensive framework for strategic analysis and decision-making.
 
+Originally developed for the Hague Centre for Strategic Studies (HCSS) to support strategic analysis and decision-making.
 ---
 
 *Last updated: hcss-utils</format>*
