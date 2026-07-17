@@ -15,7 +15,7 @@ def create_db_connection():
     Create database connection.
     """
     try:
-        password = "***DB_PASSWORD_REDACTED***"
+        password = os.environ.get("PG_WARDATASETS_PASSWORD", "")
         encoded_password = quote_plus(password)
         engine = create_engine(
             f"postgresql+psycopg2://postgres:{encoded_password}@138.201.62.161:5434/knowledge_security"
